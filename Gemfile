@@ -5,6 +5,8 @@ ruby '2.6.3'
 
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
+gem 'will_paginate'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0.rc1'
 # Use postgresql as the database for Active Record
