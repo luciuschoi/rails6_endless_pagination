@@ -1,10 +1,10 @@
 $('#posts').append('<div>[<%= j @posts.current_page %> 페이지] -------------> </div>');
 $('#posts').append('<%= j render(@posts) %>');
+console.log("rendered page <%= @posts.current_page %>");
 
 <% if @posts.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate(@posts) %>');
   $(".pagination").hide();
 <% else %>
-  $('#posts').append("<a href='#' onclick='document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()'>Back to top</a>");
   $('.pagination').remove();
 <% end %>
