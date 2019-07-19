@@ -10,11 +10,13 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="posts" data-controller="endless">
     <%= render @posts %>
   </tbody>
 </table>
 
+<div class="loading_message"></div>
+<%= will_paginate @posts %>
 <br>
 
 <%= link_to 'New Post', new_post_path %>
