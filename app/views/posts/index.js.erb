@@ -6,5 +6,6 @@ console.log("rendered page <%= @posts.current_page %>");
   $('.pagination').replaceWith('<%= j will_paginate(@posts) %>');
   $(".pagination").hide();
 <% else %>
+  $("#gotop").show();
   $('.pagination').remove();
 <% end %>
