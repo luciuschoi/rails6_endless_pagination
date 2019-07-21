@@ -49,7 +49,7 @@ Rails.application.routes.draw do
 end
 ```
 
-##1. **Gemfile**
+## 1. **Gemfile**
 
 위에서 언급한 바와 같이 레일스 프로젝트에서 데이터베이스 테이블 레코드를 페이지 단위로 보여 주기 위해서 그 동안 pagination 젬들을 사용하여 쉽게 구현할 수 있었다. 그 중에서도 이 글에서는 will_paginate 젬을 설치하여 사용할 것이다.
 
@@ -65,7 +65,7 @@ gem 'will_paginate'
 $ bundle install
 ```
 
-##2. index 뷰파일의 refactoring
+## 2. index 뷰파일의 refactoring
 
 **app/views/posts/index.html.erb**
 
@@ -108,7 +108,7 @@ $ bundle install
 </tr>
 ```
 
-##3. Pagination 적용하기
+## 3. Pagination 적용하기
 
 **app/controllers/posts_controller.rb**
 
@@ -126,7 +126,7 @@ class PostsController < ApplicationController
 end
 ```
 
-##4. Ajax 콜
+## 4. Ajax 콜
 
 posts#index 액션을 remote 호출시마다 새로 렌더링된 다음 페이지 분량의 posts 들을 추가하고 pagination 부분의 갱신한다.
 
@@ -146,7 +146,7 @@ console.log("rendered page <%= @posts.current_page %>");
 <% end %>
 ```
 
-##5. Endless 컨트롤러 작성
+## 5. Endless 컨트롤러 작성
 
 **stimulus.js** 동작을 위해서 **data-controller**로 지정한 **endless** 컨트롤러를 작성한다.
 
