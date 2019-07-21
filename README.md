@@ -10,7 +10,7 @@
 
 이 글에서는 **레일스 6**에서 위의 젬 도움 없이 **Stimulus.js** 를 사용하여 구현하는 방법을 알아 볼 것이다.
 
-**jquery.pageless.js** 를 사용할 때처럼 먼저 **will_paginate** 젬을 이용하여 먼저 **pagination**을 구현해야 놓아야 한다.
+**jquery.pageless.js** 를 사용할 때처럼 먼저 **will_paginate** 젬을 이용하여 먼저 **pagination**을 구현해 놓아야 한다.
 
 > **Note** : Bootstrap 설치하는 방법은 [Rails 6를 영접하자](https://github.com/luciuschoi/welcome_rails6/tree/master) 참고하기 바란다.
 
